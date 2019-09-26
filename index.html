@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0
+    }
+
+    .box {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box1 {
+        background-color: #333333;
+        position: relative;
+        padding: 20px
+    }
+
+    .box2 {
+        width: 80%;
+        margin: auto
+    }
+
+    .hotel {
+        height: 56px;
+        width: 24%;
+        background-color: white;
+        display: inline-block;
+    }
+
+    .box3 {
+        height: 87%;
+        width: 100%;
+        background-color: darkgray;
+        position: relative
+    }
+
+    .box4 {
+        height: 50%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto
+    }
+
+    .htemplate {
+        height: 100px;
+        width: 100%;
+        background-color: white;
+        margin: 50px 0px;
+    }
+
+    .check {
+        height: 100px;
+        width: 100%;
+        background-color: darkgray;
+
+    }
+
+    .check-in {
+        height: 100px;
+        width: 24.50%;
+        background-color: cornsilk;
+        display: inline-block
+    }
+
+    .check-out {
+        height: 100px;
+        width: 24.50%;
+        background-color: cornsilk;
+        display: inline-block
+    }
+
+    .guests {
+        height: 100px;
+        width: 24.50%;
+        background-color: cornsilk;
+        display: inline-block;
+    }
+
+    .avalibility {
+        height: 100px;
+        width: 24.50%;
+        background-color: black;
+        display: inline-block;
+    }
+
+    .box11 {
+        height: 100%;
+        width: 100%
+    }
+
+    .box9 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box5 {
+        width: 50%;
+        height: 100%;
+        background-color: #17a2b8;
+        display: inline-block
+    }
+
+    .box6 {
+        width: 49.70%;
+        height: 100%;
+        background-color: #333333;
+        display: inline-block;
+        position: relative
+    }
+
+    .box10 {
+        width: 75%;
+        height: 80%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0
+    }
+
+    .do {
+        width: 450px;
+        height: 95px;
+        background-color: white;
+        margin: 10px 0px;
+    }
+
+    .history {
+        width: 230px;
+        height: 90px;
+        background-color: #c19b76;
+        margin: 10px 0px;
+    }
+
+    .box7 {
+        width: 225px;
+        height: 200px;
+        background-color: #878787;
+        display: inline-block;
+        padding: 15px
+    }
+
+    .box8 {
+        width: 270px;
+        height: 255px;
+        background-color: #878787;
+        display: inline-block;
+        margin: 0px 15px
+    }
+
+    .aboutus {
+        height: 60px;
+        width: 160px;
+        background-color: #878787;
+        margin: 20px 0px
+    }
+
+    .box12 {
+        height: 137%;
+        width: 100%;
+        position: relative;
+        background-color: #EFEFEF
+    }
+
+    .box13 {
+        height: 90%;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto
+    }
+
+    .luxery {
+        height: 70px;
+        width: 250px;
+        background-color: #878787;
+        margin: 30px 410px
+    }
+
+    .rooms {
+        height: 100px;
+        width: 400px;
+        background-color: #878787;
+        margin: 40px 350px
+    }
+
+    .image {
+        height: 250px;
+        width: 478px;
+        background-color: #c19b76;
+        display: inline-block;
+        padding: 32px;
+        margin: 5px
+    }
+
+    .image1 {
+        height: 300px;
+        width: 250px;
+        background-color: #c19b76;
+        display: inline-block;
+        padding: 0px 0px 13px 0px
+    }
+
+    .image3 {
+        height: 250px;
+        width: 478px;
+        background-color: #c19b76;
+        display: inline-block;
+        padding: 32px;
+        margin: 5px
+    }
+
+    .room {
+        width: 250px;
+        height: 60px;
+        background-color: white;
+        margin: 0px 0px 10px 0px
+    }
+
+    .guest {
+        width: 270px;
+        height: 40px;
+        background-color: white;
+        margin: 0px 0px 10px 0px
+    }
+
+    .template {
+        width: 470px;
+        height: 80px;
+        background-color: white;
+        margin: 0px 0px 10px 0px
+    }
+
+    .book {
+        width: 223px;
+        height: 40px;
+        background-color: white;
+        margin: 0px 0px 10px 0px
+    }
+
+    .image5 {
+        height: 300px;
+        width: 250px;
+        background-color: #c19b76;
+        display: inline-block;
+        padding: 13px 0px 0px 0px
+    }
+
+    .box14 {
+        height: 120%;
+        width: 100%;
+        background-color: #2c4863;
+        position: relative
+    }
+
+    .box15 {
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto
+    }
+
+    .service {
+        height: 100px;
+        width: 350px;
+        background-color: white;
+        margin: 0px 0px 40px 460px
+    }
+
+    .basic {
+        height: 180px;
+        width: 240px;
+        background-color: #c19b76;
+        display: inline-block;
+        margin: 0px 30px 0px 10px;
+        padding: 10px
+    }
+
+    .basic1 {
+        height: 30px;
+        width: 80px;
+        background-color: white;
+        margin: 10px
+    }
+
+    .rs {
+        height: 50px;
+        width: 150px;
+        background-color: white;
+        margin: 10px
+    }
+
+    .day {
+        height: 20px;
+        width: 90px;
+        background-color: white;
+        margin: 10px
+    }
+
+    .standard {
+        height: 180px;
+        width: 240px;
+        background-color: #c19b76;
+        display: inline-block;
+        margin: 0px 30px 0px 0px;
+        padding: 10px
+    }
+
+    .basic2 {
+        height: 240px;
+        width: 240px;
+        background-color: white;
+        display: inline-block;
+        margin: 0px 30px 0px 10px;
+        padding: 10px
+    }
+
+    .standard2 {
+        height: 270px;
+        width: 240px;
+        background-color: white;
+        display: inline-block;
+        margin: 0px 30px 0px 0px;
+        padding: 10px
+    }
+
+    .standard3 {
+        height: 300px;
+        width: 240px;
+        background-color: white;
+        display: inline-block;
+        margin: 0px 30px 0px 0px;
+        padding: 10px
+    }
+
+    .standard4 {
+        height: 330px;
+        width: 240px;
+        background-color: white;
+        display: inline-block;
+        margin: 0px 30px 0px 0px;
+        padding: 10px
+    }
+
+    .one {
+        height: 30px;
+        width: 130px;
+        background-color: #333333;
+        margin: 10px
+    }
+
+    .buffer {
+        height: 30px;
+        width: 80px;
+        background-color: #333333;
+        margin: 10px 10px 30px 10px
+    }
+
+    .read {
+        height: 40px;
+        width: 140px;
+        background-color: #333333;
+        margin: 40px 10px 10px 50px
+    }
+
+    .buffer1 {
+        height: 30px;
+        width: 80px;
+        background-color: #333333;
+        margin: 10px
+    }
+
+    .laundry {
+        height: 30px;
+        width: 90px;
+        background-color: #333333;
+        margin: 10px 10px 30px 10px
+    }
+
+    .laundry1 {
+        height: 30px;
+        width: 90px;
+        background-color: #333333;
+        margin: 10px
+    }
+
+    .dryclean {
+        height: 30px;
+        width: 130px;
+        background-color: #333333;
+        margin: 10px 10px 30px 10px
+    }
+
+    .dryclean1 {
+        height: 30px;
+        width: 130px;
+        background-color: #333333;
+        margin: 10px
+    }
+
+    .wifi {
+        height: 30px;
+        width: 150px;
+        background-color: #333333;
+        margin: 10px 10px 30px 10px
+    }
+
+    .basic3 {
+        width: 285px;
+        height: 550px;
+        display: inline-block
+    }
+
+    .box16 {
+        width: 100%;
+        height: 90%;
+        position: relative
+    }
+
+    .box17 {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto
+    }
+
+    .hotel1 {
+        width: 500px;
+        height: 100px;
+        background-color: #333333;
+        margin: 0px 0px 0px 460px;
+    }
+
+    .bar {
+        height: 380px;
+        width: 25%;
+        background-color: #9757ff;
+        padding: 16px;
+        display: inline-block;
+        margin: 30px
+    }
+
+    .lorem {
+        height: 50px;
+        width: 190px;
+        background-color: white;
+        margin: 280px 0px 0px 75px
+    }
+
+    .ipsum {
+        height: 30px;
+        width: 150px;
+        background-color: white;
+        margin: 20px 0px 0px 95px
+    }
+
+    .box18 {
+        height: 110%;
+        width: 100%;
+        position: relative;
+        background-color: #66ffa2
+    }
+
+    .box19 {
+        height: 81%;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto
+    }
+
+    .client {
+        height: 100px;
+        width: 900px;
+        background-color: white;
+        margin: 0px 0px 60px 110px
+    }
+
+    .box20 {
+        height: 210px;
+        width: 85%;
+        background-color: #c19b76;
+        margin: 0px 0px 30px 74px;
+        padding: 16px
+    }
+
+    .image2 {
+        height: 140px;
+        width: 140px;
+        background-color: #fff0f0;
+        display: inline-block;
+        margin: 10px 0px 0px 0px;
+        border-radius: 50%
+    }
+    .text{
+        height: 130px;
+        width: 800px;
+        background-color: white;
+        display: inline-block;
+        margin: 10px 
+    }
+    .jane{
+        height: 20px; 
+        width: 60px;
+        background-color: white;
+        margin: 0px 0px 10px 155px
+    }
+    .traveller{
+        height: 20px;
+        width: 90px;
+        background-color: white;
+        margin: 0px 0px 0px 155px
+    }
+    .text1{
+         height: 130px;
+        width: 800px;
+        background-color: white;
+        display: inline-block;
+        margin: 10px 
+    }
+    .amanda{
+         height: 20px;
+        width: 60px;
+        background-color: white;
+        margin: 10px;
+    }
+    .traveller1{
+        height: 20px;
+        width: 90px;
+        background-color: white;
+        margin: 10px; 
+    } 
+    .image4{
+        height: 140px;
+        width: 140px;
+        background-color: #fff0f0;
+        border-radius: 50%;
+        display: inline-block
+    }
+    .box21{
+        width: 100%;
+        height: 30%;
+        background-color: white;
+        position: relative
+    }
+    .box22{
+        height: 40%;
+        width: 40%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto
+    }
+    .find{
+        height: 90px;
+        width: 474px;
+        background-color: #333333
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="box2">
+                <div class="hotel"></div>
+                <div class="hotel"></div>
+                <div class="hotel"></div>
+                <div class="hotel"></div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box4">
+                <div class="htemplate"></div>
+                <div class="check">
+                    <div class="check-in"></div>
+                    <div class="check-out"></div>
+                    <div class="guests"></div>
+                    <div class="avalibility"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box11">
+        <div class="box9">
+            <div class="box5"></div>
+            <div class="box6">
+                <div class="box10">
+                    <div class="do"></div>
+                    <div class="history"></div>
+                    <div class="box7"></div>
+                    <div class="box8"></div>
+                    <div class="aboutus"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box12">
+        <div class="box13">
+            <div class="luxery"></div>
+            <div class="rooms"></div>
+            <div class="image"></div>
+            <div class="image1"></div>
+            <div class="image1"></div>
+            <div class="image3">
+                <div class="room"></div>
+                <div class="guest"></div>
+                <div class="template"></div>
+                <div class="book"></div>
+            </div>
+            <div class="image5"></div>
+            <div class="image5"></div>
+        </div>
+    </div>
+
+    <div class="box14">
+        <div class="box15">
+            <div class="service"></div>
+            <div class="basic3">
+                <div class="basic">
+                    <div class="basic1"></div>
+                    <div class="rs"></div>
+                    <div class="day"></div>
+                </div>
+                <div class="basic2">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="buffer"></div>
+                    <div class="read"></div>
+                </div>
+            </div>
+
+            <div class="basic3">
+                <div class="standard">
+                    <div class="basic1"></div>
+                    <div class="rs"></div>
+                    <div class="day"></div>
+                </div>
+                <div class="standard2">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="buffer1"></div>
+                    <div class="laundry"></div>
+                    <div class="read"></div>
+                </div>
+            </div>
+            <div class="basic3">
+                <div class="standard">
+                    <div class="basic1"></div>
+                    <div class="rs"></div>
+                    <div class="day"></div>
+                </div>
+                <div class="standard3">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="buffer1"></div>
+                    <div class="laundry1"></div>
+                    <div class="dryclean"></div>
+                    <div class="read"></div>
+                </div>
+            </div>
+            <div class="basic3">
+                <div class="standard">
+                    <div class="basic1"></div>
+                    <div class="rs"></div>
+                    <div class="day"></div>
+                </div>
+                <div class="standard4">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="buffer1"></div>
+                    <div class="laundry1"></div>
+                    <div class="dryclean1"></div>
+                    <div class="wifi"></div>
+                    <div class="read"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box16">
+        <div class="box17">
+            <div class="hotel1"></div>
+            <div class="bar">
+                <div class="lorem"></div>
+                <div class="ipsum"></div>
+            </div>
+            <div class="bar">
+                <div class="lorem"></div>
+                <div class="ipsum"></div>
+            </div>
+            <div class="bar">
+                <div class="lorem"></div>
+                <div class="ipsum"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box18">
+        <div class="box19">
+            <div class="client"></div>
+            <div class="box20">
+                <div class="image2"></div>
+                <div class="text"></div>
+                <div class="jane"></div>
+                <div class="traveller"></div>
+            </div>
+            <div class="box20">
+                <div class="text1"></div>
+                <div class="image4"></div>
+                <div class="amanda"></div>
+                <div class="traveller1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box21">
+        <div class="box22">
+            <div class="find"></div>
+        </div>
+    </div>
+</body></html>
